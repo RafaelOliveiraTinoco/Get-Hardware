@@ -27,23 +27,27 @@
     color: white;
 }
 
-#btn-custom-2{
+.btn-custom-2{
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
 }
-#btn-custom-2:hover{
+.btn-custom-2:hover{
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
 }
-#btn-custom-2:active{
+.btn-custom-2:active{
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
 }
 
 .link-with-underline{
     border-bottom: solid 1px white;
     display: inline-block;
+}
+
+.dropdown-item{
+    background-color: #00ABE0 !important;
+}
+.dropdown-item:hover{
+    text-decoration: underline;
 }

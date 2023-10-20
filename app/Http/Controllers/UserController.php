@@ -10,6 +10,6 @@ class UserController extends Controller
         return "register";
     }
     public function loginPage(){
-        return "register";
+        return "login";
     }
 }
