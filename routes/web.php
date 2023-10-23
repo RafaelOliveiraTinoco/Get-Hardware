@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -14,12 +15,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [PagesController::class, "index"]);
 
-Route::get("/register", [UserController::class, "registerPage"]);
-Route::get("/login", [UserController::class, "loginPage"]);
+Route::post("/register", [UserController::class, "register"]);
+Route::post("/login", [UserController::class, "login"]);
+Route::get("/logout", [UserController::class, "logout"]);
 
 Route::fallback(function () {
     return redirect("/");
