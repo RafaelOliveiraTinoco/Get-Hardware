@@ -17,7 +17,9 @@
                     <h5 class="card-title text-white link-with-underline">Professional Camera<i class="bi bi-box-arrow-up-right ms-2 fs-6"></i></h5>
                     <div class="d-flex justify-content-between align-items-center"> <!-- justify-content-between to have price on the extreme left and the button on the extreme right align-items-center to make the price be vertically aligned to the center -->
                         <p class="text-white fw-bold m-0">200.99$</p>
-                        <button type="button" class="btn btn-primary text-white rounded-0"><i class="bi bi-cart-plus"></i></button>
+                        @if($isAuthenticated)
+                            <button type="button" class="btn btn-primary text-white rounded-0"><i class="bi bi-cart-plus"></i></button>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -29,7 +31,9 @@
                     <h5 class="card-title text-white link-with-underline">Ocean<i class="bi bi-box-arrow-up-right ms-2 fs-6"></i></h5>
                     <div class="d-flex justify-content-between align-items-center"> <!-- justify-content-between to have price on the extreme left and the button on the extreme right align-items-center to make the price be vertically aligned to the center -->
                         <p class="text-white fw-bold m-0">FREE</p>
-                        <button type="button" class="btn btn-primary text-white rounded-0"><i class="bi bi-cart-plus"></i></button>
+                        @if($isAuthenticated)
+                            <button type="button" class="btn btn-primary text-white rounded-0"><i class="bi bi-cart-plus"></i></button>
+                        @endif
                     </div>
                 </div>
             </div>

@@ -11,9 +11,15 @@
     border-radius: 0;
 
     background-color: rgba(0, 0, 0, 0);
+
+    outline: none !important;
 }
 .custom-input::placeholder{
     color: white;
+}
+
+.btn{
+    border-radius: 0;
 }
 
 .btn-custom-1{
@@ -50,4 +56,12 @@
 }
 .dropdown-item:hover{
     text-decoration: underline;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    border: 0;
+}
+
+.modal-content{
+    border-radius: 0;
 }
