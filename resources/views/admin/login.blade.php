@@ -7,7 +7,7 @@
 
     <form method="POST" action="/admin/login">
         @csrf
-        <input type="text" class="form-control custom-input mt-3" placeholder="Email" name="Email">
+        <input type="text" class="form-control custom-input mt-3" placeholder="Email" name="email">
         <input type="password" class="form-control custom-input mt-3" placeholder="Password" name="password">
         <button type="submit" class="btn btn-primary text-white rounded-0 mt-5">Login</button>
     </form>
