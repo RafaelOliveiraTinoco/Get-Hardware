@@ -6,7 +6,7 @@
     <p class="h1 text-white">Admin Panel</p>
 
     <form method="POST" action="/admin/login">
-        <input type="text" class="form-control custom-input mt-3" placeholder="Username" name="username">
+        <input type="text" class="form-control custom-input mt-3" placeholder="Email" name="Email">
         <input type="password" class="form-control custom-input mt-3" placeholder="Password" name="password">
         <button type="submit" class="btn btn-primary text-white rounded-0 mt-5">Login</button>
     </form>
