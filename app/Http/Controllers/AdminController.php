@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function login(Request $request){
         $request->validate([
             "email" => ["email", "required"],
-            "password" => ["email", "required"],
+            "password" => ["required"],
         ]);
 
         $credentials = $request->only("email", "password");
