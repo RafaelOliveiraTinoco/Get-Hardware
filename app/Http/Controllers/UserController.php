@@ -48,4 +48,9 @@ class UserController extends Controller
     public static function isAuthenticated(){
         return Auth::check(); // returns true if the user is authenticated, and false if the user is not authenticated
     }
+
+    public static function isAdmin(){
+        if (self::isAuthenticated() && Auth::user()->role == 1) return true; // if user is authenticated and role = 1 (admin) returns true
+        else return false;
+    }
 }
