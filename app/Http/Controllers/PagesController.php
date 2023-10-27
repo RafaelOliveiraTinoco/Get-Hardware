@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\CategoriesController;
 
 class PagesController extends Controller
 {
@@ -21,7 +22,9 @@ class PagesController extends Controller
     }
 
     public function adminCategories(Request $request){
-        if (UserController::isAdmin()) return view("admin.categories");
+        if (UserController::isAdmin()) return view("admin.categories", [
+            "categories" => CategoriesController::getCategories(),
+        ]);
         else return redirect("/");
     }
 }
