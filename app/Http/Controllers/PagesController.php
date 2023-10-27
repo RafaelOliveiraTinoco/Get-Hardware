@@ -19,4 +19,9 @@ class PagesController extends Controller
         if (UserController::isAdmin()) return view("admin.index");
         else return redirect("/");
     }
+
+    public function adminCategories(Request $request){
+        if (UserController::isAdmin()) return view("admin.categories");
+        else return redirect("/");
+    }
 }

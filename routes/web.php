@@ -22,6 +22,7 @@ Route::post("/login", [UserController::class, "login"]);
 Route::get("/logout", [UserController::class, "logout"]);
 
 Route::get("/admin", [PagesController::class, "adminIndex"]);
+Route::get("/admin/categories", [PagesController::class, "adminCategories"]);
 
 Route::fallback(function () {
     return redirect("/");

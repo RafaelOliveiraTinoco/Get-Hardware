@@ -5,5 +5,29 @@ $body-bg: #282828;
 $primary: #00ABE0;
 $secondary: #4F4F4F;
 
+// hide outline border on focus
+$focus-ring-opacity: 0;
+
+//
+//
+// Custom Components
+//
+//
+
+// Custom Accordion
+$accordion-color: white;
+$accordion-bg: $body-bg;
+
+$accordion-button-color: white;
+$accordion-button-bg: $body-bg;
+$accordion-button-active-bg: $secondary;
+$accordion-button-active-color: white;
+
+$accordion-border-color: white;
+$accordion-border-radius: 0;
+
+$accordion-icon-color:  $primary;
+$accordion-icon-active-color: $primary;
+
 // import bootstrap
-@import "../bootstrap-5.3.2/scss/bootstrap"
+@import "../bootstrap-5.3.2/scss/bootstrap";

@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-white">Manage Categories</h5>
                     <p class="card-text text-white">Create, delete, or update the categories</p>
-                    <a href="#" class="btn btn-primary rounded-0 text-white">Go<i class="bi bi-arrow-right ms-2"></i></a>
+                    <a href="/admin/categories" class="btn btn-primary rounded-0 text-white">Go<i class="bi bi-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
