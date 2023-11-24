@@ -22,7 +22,11 @@
         <div class="dropdown">
             <button class="btn text-white btn-custom-2" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill"></i></button>
             <ul class="dropdown-menu dropdown-menu-end bg-primary">
-                @if($isAuthenticated == false)
+                @if($isAdmin)
+                    <li><a href="/admin" class="dropdown-item text-white">Admin Panel<i class="bi bi-box-arrow-right ms-2"></i></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                @endif
+                @if(!$isAuthenticated)
                     <li><button type="button" class="dropdown-item text-white" data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-left ms-2"></i></button></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><button type="button" class="dropdown-item text-white" data-bs-toggle="modal" data-bs-target="#registerModal">Register<i class="bi bi-person-plus-fill ms-2"></i></button></li>

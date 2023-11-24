@@ -5,5 +5,42 @@ $body-bg: #282828;
 $primary: #00ABE0;
 $secondary: #4F4F4F;
 
+// hide outline border on focus
+$focus-ring-opacity: 0;
+
+//
+//
+// Custom Components
+//
+//
+
+// Custom Accordion
+$accordion-color: white;
+$accordion-bg: $body-bg;
+
+$accordion-button-color: white;
+$accordion-button-bg: $body-bg;
+$accordion-button-active-bg: $secondary;
+$accordion-button-active-color: white;
+
+$accordion-border-color: white;
+$accordion-border-radius: 0;
+
+$accordion-icon-color:  $primary;
+$accordion-icon-active-color: $primary;
+
+// Input
+$input-disabled-bg: rgba($secondary, 0.2);
+$input-disabled-border-color: rgba(0, 0, 0, 0);
+
+// Input file
+$form-file-button-color: white;
+$form-file-button-bg: $primary;
+$form-file-button-hover-bg: $primary;
+
+// Select
+$form-select-indicator-color: white;
+$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w4.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+
 // import bootstrap
-@import "../bootstrap-5.3.2/scss/bootstrap"
+@import "../bootstrap-5.3.2/scss/bootstrap";

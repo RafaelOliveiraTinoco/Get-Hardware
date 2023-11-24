@@ -21,6 +21,7 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
+        $user->role = 0;
         $user->save();
 
         return redirect()->back();
@@ -46,5 +47,10 @@ class UserController extends Controller
 
     public static function isAuthenticated(){
         return Auth::check(); // returns true if the user is authenticated, and false if the user is not authenticated
+    }
+
+    public static function isAdmin(){
+        if (self::isAuthenticated() && Auth::user()->role == 1) return true; // if user is authenticated and role = 1 (admin) returns true
+        else return false;
     }
 }

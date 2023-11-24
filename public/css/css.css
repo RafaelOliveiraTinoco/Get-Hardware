@@ -18,6 +18,26 @@
     color: white;
 }
 
+.custom-textarea{
+    border: none;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+    border-radius: 0;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+.custom-textarea:focus{
+    border: none;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+    border-radius: 0;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+.custom-textarea::placeholder{
+    color: white;
+}
+
 .btn{
     border-radius: 0;
 }
@@ -64,4 +84,20 @@
 
 .modal-content{
     border-radius: 0;
+}
+
+option{
+    background-color: #282828;
+    color: white;
+}
+
+.show-btn-hover button{
+    display: none;
+}
+.show-btn-hover:hover button{
+    display: block;
+}
+
+.black-and-white-image {
+    filter: grayscale(100%);
 }

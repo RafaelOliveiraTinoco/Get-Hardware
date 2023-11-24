@@ -1,1 +1,2 @@
-admin dashboard
+admin user can't delete all images, it must have 1 minimum
+it's only uploading 1 image in the create function in product controller brother
