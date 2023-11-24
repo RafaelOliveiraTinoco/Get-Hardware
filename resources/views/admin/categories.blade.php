@@ -17,7 +17,7 @@
                 <div class="accordion-body">
                     <form action="/admin/categories/create" method="POST">
                         @csrf
-                        <input type="text" class="form-control custom-input text-white" name="name" placeholder="Category name">
+                        <input type="text" class="form-control custom-input text-white" name="name" placeholder="Category name" required>
                         <button type="submit" class="btn btn-primary text-white rounded-0 mt-3">Create<i class="bi bi-plus-lg ms-2"></i></button>
                     </form>
                 </div>
