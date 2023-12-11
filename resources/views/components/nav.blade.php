@@ -10,7 +10,7 @@
                     @foreach($categories as $category)
                         <li><a class="dropdown-item text-white" href="#">{{$category->name}}</a></li>
                         @if(!$loop->last)
-                            <li><hr class="dropdown-divider"></li>
+                            <li><hr class="dropdown-divider"></li> <!-- Render divider but not last -->
                         @endif
                     @endforeach
                 </ul>
