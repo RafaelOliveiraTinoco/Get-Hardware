@@ -12,6 +12,8 @@ class PagesController extends Controller
         return view("index", [
             "isAuthenticated" => UserController::isAuthenticated(),
             "isAdmin" => UserController::isAdmin(),
+
+            "categories" => CategoriesController::getCategories(),
         ]);
     }
 

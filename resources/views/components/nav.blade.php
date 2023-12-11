@@ -7,11 +7,12 @@
                     Categories
                 </button>
                 <ul class="dropdown-menu bg-primary">
-                    <li><a class="dropdown-item text-white" href="#">Boards</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-white" href="#">Fans</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-white" href="#">GPU</a></li>
+                    @foreach($categories as $category)
+                        <li><a class="dropdown-item text-white" href="#">{{$category->name}}</a></li>
+                        @if(!$loop->last)
+                            <li><hr class="dropdown-divider"></li>
+                        @endif
+                    @endforeach
                 </ul>
             </div>
         </div>
