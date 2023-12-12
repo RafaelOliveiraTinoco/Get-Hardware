@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 use App\Models\Category;
 use App\Http\Controllers\UserController;
 
@@ -58,5 +60,13 @@ class CategoriesController extends Controller
 
     public static function getCategories(){
         return Category::all();
+    }
+
+    public static function getCategoriesWithProducts(){ // Returns all categories that have products
+        return DB::table("categories")
+            ->join("products", "categories.id", "=", "products.category_id") // Inner join, only returns cageroies that have a product associated with
+            ->select("categories.*") // From the query select only the categories data
+            ->distinct() // Unique id
+            ->get();
     }
 }
