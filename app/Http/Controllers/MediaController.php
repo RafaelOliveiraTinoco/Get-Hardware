@@ -13,7 +13,7 @@ class MediaController extends Controller
     public function productThumbnail(Request $request, $productThumbnail){
         // conditions
         // validations
-        $result = Product::where("product_thumbnail", $productThumbnail)->first();
+        $result = Product::where("product_thumbnail", $productThumbnail)->first(); // Check if there is a product image with given name
         if ($result){
             $file = Storage::get("product_thumbnails/" . $productThumbnail);
             return $file;
